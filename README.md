@@ -20,7 +20,7 @@ Bu loyiha WebSocket PHP serverini Docker yordamida oson va tez ishga tushirish u
 
 ```bash
 docker --version
-docker-compose --version
+docker compose --version
 ```
 
 Agar o'rnatilmagan bo'lsa, [Docker rasmiy sayti](https://docs.docker.com/get-docker/) orqali o'rnatishingiz mumkin.
@@ -36,7 +36,7 @@ cd /path/to/your/project
 ### 3. Docker Compose yordamida konteynerlarni ishga tushurish
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Bu buyruq konteynerlarni fon rejimida ishga tushiradi.
@@ -92,27 +92,12 @@ ws.onclose = () => {
 ### 7. Konteynerlarni to'xtatish
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 Bu buyruq barcha konteynerlarni to'xtatadi va o'chiradi.
 
 ## Qo'shimcha ma'lumotlar
 
-- `docker-compose.yml` fayli `./socket` katalogidan Dockerfile yordamida konteynerni quradi.
-- Server 8080 portida ishlaydi; uni o'zgartirish uchun `docker-compose.yml` faylini tahrirlashingiz mumkin.
-
-## Huquq huquqlari
-
-Bu loyiha **Open Source** bo'lib, MIT litsenziyasi asosida taqdim etiladi.
-
-## Yordam va savollar
-
-Agar sizga yordam kerak bo'lsa yoki savollaringiz bo'lsa, quyidagi kontaktlar orqali murojaat qilishingiz mumkin:
-
-- Email: example@example.com
-- GitHub Issues: [https://github.com/your-repo/issues](https://github.com/your-repo/issues)
-
----
-
-**Yaxshi ishlash!**
+- `docker compose.yml` fayli `./socket` katalogidan Dockerfile yordamida konteynerni quradi.
+- Server 8080 portida ishlaydi; uni o'zgartirish uchun `docke compose.yml` faylini tahrirlashingiz mumkin.
