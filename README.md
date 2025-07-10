@@ -99,5 +99,5 @@ Bu buyruq barcha konteynerlarni to'xtatadi va o'chiradi.
 
 ## Qo'shimcha ma'lumotlar
 
-- `docker compose.yml` fayli `./socket` katalogidan Dockerfile yordamida konteynerni quradi.
-- Server 8080 portida ishlaydi; uni o'zgartirish uchun `docke compose.yml` faylini tahrirlashingiz mumkin.
+- `docker-compose.yml` fayli `./socket` katalogidan Dockerfile yordamida konteynerni quradi.
+- Server 8080 portida ishlaydi; uni o'zgartirish uchun `docker-compose.yml` faylini tahrirlashingiz mumkin.
