@@ -1,0 +1,10 @@
+services: 
+  websocket-php:
+    container_name: websocket
+    restart: unless-stopped
+    build:
+      context: ./socket
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
