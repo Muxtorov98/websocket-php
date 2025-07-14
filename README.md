@@ -113,5 +113,5 @@ Agar siz Docker Hub orqali tayyor image ishlatmoqchi bo‘lsangiz:
     container_name: ${DOCKER_PROJECT_NAME}_websocket
     restart: unless-stopped
     ports:
-      - - 127.0.0.1:8080:8080
+      - 127.0.0.1:8080:8080
 ```     
