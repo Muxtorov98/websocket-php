@@ -101,3 +101,17 @@ Bu buyruq barcha konteynerlarni to'xtatadi va o'chiradi.
 
 - `docker-compose.yml` fayli `./socket` katalogidan Dockerfile yordamida konteynerni quradi.
 - Server 8080 portida ishlaydi; uni o'zgartirish uchun `docker-compose.yml` faylini tahrirlashingiz mumkin.
+
+## 📌 Image Orqali Ishga Tushirish (Docker Hub-dan)
+
+Agar siz Docker Hub orqali tayyor image ishlatmoqchi bo‘lsangiz:
+
+```yaml
+   
+  websocket-php:
+    image: tulqinmuxtorov/websocket-php:alpine
+    container_name: ${DOCKER_PROJECT_NAME}_websocket
+    restart: unless-stopped
+    ports:
+      - - 127.0.0.1:8080:8080
+```     
